@@ -1,0 +1,153 @@
+div,
+p,
+body,
+ul,
+li,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background: url('../images/background.png') no-repeat;
+  background-size: cover;
+  font-family: "微软雅黑";
+  height: 100%;
+  min-width: 1024px;
+  cursor: default;
+  position: relative;
+  z-index: 0;
+}
+.small-font {
+  font-size: 12px;
+  -webkit-transform-origin-x: 0;
+  -webkit-transform: scale(0.8);
+}
+.smallsize-font {
+  font-size: 9.6px;
+}
+.header {
+  position: relative;
+  top: 20px;
+  width: 1024px;
+  margin: 0 auto;
+}
+.header .left {
+  float: left;
+  width: 113px;
+}
+.header .right {
+  float: right;
+  width: 27px;
+}
+.header .right .top {
+  margin: 30px 3px 10px 0;
+}
+.header .right .top img {
+  position: relative;
+  right: -2px;
+}
+.header .inner {
+  margin: 0 140px 0 193px;
+  height: 150px;
+  position: relative;
+  top: 40px;
+}
+.header .inner .search {
+  text-align: right;
+  position: relative;
+  right: -4px;
+}
+.header .inner .search .search-input {
+  width: 236px;
+  height: 22px;
+  border: 1px solid #D2CED5;
+  padding-left: 10px;
+  background: transparent;
+}
+.header .inner .search .search-submit {
+  background: url("../images/search.png") no-repeat;
+  border: 0;
+  height: 24px;
+  width: 29px;
+  position: relative;
+  left: -35px;
+  top: 7px;
+  cursor: pointer;
+}
+.header .inner .nav {
+  margin-top: 25px;
+}
+.header .inner .nav .tab li {
+  float: left;
+  width: 110px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+.header .inner .nav .tab li a {
+  display: block;
+  background-position: 18px 0;
+}
+.header .inner .nav .tab li a span.title {
+  color: #F2D454;
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+}
+.header .inner .nav .tab li a span.en {
+  color: #999999;
+  width: 120px;
+  padding-left: 8px;
+  display: block;
+}
+.footer {
+  text-align: center;
+  color: #336699;
+  font-size: 8px;
+  width: 100%;
+  clear: both;
+  position: fixed;
+  bottom: 10px;
+}
+.footer .phone {
+  margin: 0 10px;
+}
+.home {
+  width: 1024px;
+  margin: 0 auto;
+}
+.home .content {
+  min-height: 520px;
+  margin-top: 50px;
+  padding-left: 135px;
+}
+.home .content .row1,
+.home .content .row2,
+.home .content .row3 {
+  height: 140px;
+}
+.home .content .row1 ul,
+.home .content .row2 ul,
+.home .content .row3 ul {
+  height: 100%;
+}
+.home .content .row1 ul li,
+.home .content .row2 ul li,
+.home .content .row3 ul li {
+  float: left;
+  height: 100%;
+  width: 176px;
+  background: #555B6F;
+  opacity: 0.56;
+  margin: 2px;
+  text-align: center;
+  border: 2px solid #4E5469;
+}
+.home .content .row1 ul li p.up,
+.home .content .row2 ul li p.up,
+.home .content .row3 ul li p.up {
+  margin: 30px 0 10px;
+}
