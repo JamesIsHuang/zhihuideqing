@@ -28,10 +28,10 @@ body{
 .small-font{
   font-size:12px;
   -webkit-transform-origin-x: 0;
-  -webkit-transform: scale(0.80);
+  -webkit-transform: scale(0.83);
 }
 .smallsize-font {
-   font-size:9.6px;
+   font-size:10px;
   }
 
 .header{
@@ -55,14 +55,13 @@ body{
     }
   }
   .inner{
-    margin: 0 140px 0 193px;
-    height: 150px;
+    margin: 0px 110px 0 193px;
+    height: 120px;
     position: relative;
-    top: 40px;
+    top: 110px;
     .search{
       text-align: right;
       position: relative;
-      right: -4px;
       .search-input{
         width: 236px;
         height: 22px;
@@ -131,12 +130,11 @@ body{
 }
 .home{
   width: 1024px;
-
   margin: 0 auto;
   .content{
     min-height: 520px;
     margin-top: 50px;
-    padding-left: 120px;
+    padding-left: 150px;
     .row1,.row2,.row3{
       height: 140px;
       ul{
@@ -158,12 +156,61 @@ body{
     }
 
   }
-
+  .leftnav{
+    float: left;
+  }
+  .leftnav-logo{
+    float: left;
+  }
+  .leftnav-des{
+    position: relative;
+    top: 28px;
+    left: -15px;
+    p{
+      .small-font;
+      .smallsize-font;
+      color: #999999;
+      width: 155px;
+    }
+    div{
+      width: 130px;
+      position: relative;
+      left: 15px;
+      top:-1px;
+    }
+    a{
+      color: #ffcc33;
+      font-size: 12px;
+      position: relative;
+      top: -1px;
+      left: -15px;
+    }
+  }
 }
 @media screen and (-webkit-min-device-pixel-ratio:0){
   .header .inner .nav .tab li a span.en{
     width: 120px;
     padding-left: 8px;
   }
+  .home .leftnav-des div{
+    height: 22px;
+    top:0;
+  }
+  .home .leftnav-des{
+    .li1,.li5{
+      margin-top: 17px!important;
+    }
+    .li2,.li4{
+      margin-top: 18px!important;
+    }
+    .li3{
+      margin-top: 16px!important;
+    }
+    p{
+      position: relative;
+      left: 5px;
+    }
+  }
+
 }
 
