@@ -23,10 +23,17 @@ function homeNavClick(){
         $(this).css({'background':'none'})
             .find('a').css('color','#ffcc33');
     })
-}
 
+}
+function scrollChange(){
+    $(".scrollable").scrollable({
+        vertical: true,
+        mousewheel: true
+    });
+}
 function init(){
     homeNavClick();
+    scrollChange();
 }
 $(function(){
     init();

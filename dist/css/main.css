@@ -69,6 +69,7 @@ body {
 .header .inner .search {
   text-align: right;
   position: relative;
+  right: -4px;
 }
 .header .inner .search .search-input {
   width: 236px;
@@ -195,6 +196,39 @@ body {
   position: relative;
   top: -1px;
   left: -15px;
+}
+.home .rightnav,
+.home .right-logo {
+  float: right;
+}
+.home .rightnav .right-des {
+  position: relative;
+  top: 80px;
+  left: 30px;
+}
+.home .rightnav .right-des div {
+  line-height: 30px;
+}
+.home .rightnav .right-des div .img1 {
+  position: relative;
+  top: -4px;
+}
+.home .rightnav .right-des div .bigyecircle {
+  position: relative;
+  left: -3px;
+  top: 2px;
+}
+.home .rightnav .right-des div .yellowfont {
+  color: #F2D454;
+}
+.home .rightnav .right-des .div2 {
+  width: 130px;
+  position: relative;
+  left: -12px;
+}
+.home .rightnav .right-des span {
+  color: #ffffff;
+  font-size: 12px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .header .inner .nav .tab li a span.en {
