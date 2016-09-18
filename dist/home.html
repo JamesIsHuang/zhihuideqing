@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>home</title>
     <link rel="stylesheet" href="./css/main.css"/>
+
 </head>
 <body>
-    <div class="header">
+    <div id="wapper">
+        <div class="header">
     <div class="left">
         <img src="./images/logo.png"/>
     </div>
@@ -21,7 +23,10 @@
     <div class="inner">
          <div class="search">
              <input class="search-input"/>
-             <input class="search-submit" value="" type="submit">
+             <div class="submit-div">
+                 <input class="search-submit" value="" type="submit">
+             </div>
+
          </div>
          <div class="nav">
             <img src="./images/nav.png"/>
@@ -66,7 +71,7 @@
          </div>
     </div>
 </div>
-    <div class="home">
+        <div class="home">
     <div class="content">
         <div class="row1">
             <ul>
@@ -133,11 +138,13 @@
 
     </div>
 </div>
-    <div class="footer">
+        <div class="footer">
     <p>@2016浙江省地理信息中心</p>
     <p>杭州市保俶北路83号<span class="phone">电话：0571-8880805</span>邮箱：zjgis_bz</p>
 </div>
+    </div>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="./js/home.js"></script>
 </body>
 </html>
