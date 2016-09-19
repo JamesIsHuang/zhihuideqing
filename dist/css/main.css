@@ -268,6 +268,15 @@ body {
   position: relative;
   top: -50px;
 }
+.home .home-news .more {
+  position: relative;
+  right: 66px;
+  float: right;
+  font-size: 13px;
+}
+.home .home-news .more a {
+  color: #3399cc;
+}
 .home .home-news .newscontent {
   width: 700px;
   position: relative;
