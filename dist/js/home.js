@@ -2,7 +2,7 @@
  * Created by hw on 2016/9/17.
  */
 
-function homeNavClick(){
+function homeEffect(){
     //home页的导航模块鼠标滑过效果
     $('.home .content li').mouseover(function(){
         $(this).css({'border':'2px solid #F2D454','color':'#F2D454'})
@@ -26,13 +26,15 @@ function homeNavClick(){
     $('.page .active').find('.img1').attr('src','./images/yellowline.png');
     $('.page .active').find('img').last().attr('src','./images/bigyecircle.png')
         .css({'position':'relative','left':'-3px','top':'3px'});
+    $('.bigdata li').mouseover(function(){
+        $(this).find('img').attr('src','./images/original-hover.png');
+        $(this).find('p').css('color','#ffcc66');
+    })
+    $('.bigdata li').mouseout(function(){
+        $(this).find('img').attr('src','./images/original.png');
+        $(this).find('p').css('color','#fff');
+    })
 }
-
-function init(){
-    var wheels=$('.wheel').mouseWheel();
-    homeNavClick();
-}
-
 
 (function(a,window,undefined){
 
@@ -209,6 +211,10 @@ function init(){
     }
 })(jQuery,window);
 
+function init(){
+    var wheels=$('.wheel').mouseWheel();
+    homeEffect();
+}
 
 $(function(){
     init();
