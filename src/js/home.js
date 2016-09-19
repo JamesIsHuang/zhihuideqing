@@ -12,8 +12,7 @@ function homeNavClick(){
         $(this).css({'border':'2px solid #4E5469','color':'inherit'})
             .find('img').attr({'src':'./images/elecmap.png'});
     })
-    $('.cloudcenter').css({'background':"url('./images/navhover.png') no-repeat 18px 0"})
-        .find('.title,.en').css('color','#003333');
+
     //左边导航鼠标滑过效果
     $('.leftnav .leftnav-des div').mouseover(function(){
         $(this).css({'background':'#ffcc33'})
