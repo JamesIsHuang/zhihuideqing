@@ -131,11 +131,10 @@ body{
 }
 .home{
   width: 1024px;
-  margin: 0 auto;
+  margin: 50px auto 0;
+  position: relative;
+  min-height: 600px;
   .content{
-    min-height: 520px;
-    margin-top: 50px;
-    padding-left: 150px;
     .row1,.row2,.row3{
       height: 140px;
       ul{
@@ -158,10 +157,16 @@ body{
 
   }
   .leftnav{
-    float: left;
+    position: absolute;
   }
   .leftnav-logo{
     float: left;
+  }
+  .wrapper {
+    min-height: 520px;
+    padding-left: 150px;
+    position: absolute;
+    overflow: hidden;
   }
   .leftnav-des{
     position: relative;

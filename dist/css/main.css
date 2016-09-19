@@ -131,12 +131,9 @@ body {
 }
 .home {
   width: 1024px;
-  margin: 0 auto;
-}
-.home .content {
-  min-height: 520px;
-  margin-top: 50px;
-  padding-left: 150px;
+  margin: 50px auto 0;
+  position: relative;
+  min-height: 600px;
 }
 .home .content .row1,
 .home .content .row2,
@@ -166,10 +163,16 @@ body {
   margin: 30px 0 10px;
 }
 .home .leftnav {
-  float: left;
+  position: absolute;
 }
 .home .leftnav-logo {
   float: left;
+}
+.home .wrapper {
+  min-height: 520px;
+  padding-left: 150px;
+  position: absolute;
+  overflow: hidden;
 }
 .home .leftnav-des {
   position: relative;
