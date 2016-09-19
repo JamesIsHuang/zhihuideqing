@@ -34,6 +34,12 @@ function homeEffect(){
         $(this).find('img').attr('src','./images/original.png');
         $(this).find('p').css('color','#fff');
     })
+    $('.newscontent li').mouseover(function(){
+        $(this).css('background','#53566E').find('img').attr('src','./images/newcircle2.png');
+    })
+    $('.newscontent li').mouseout(function(){
+        $(this).css('background','none').find('img').attr('src','./images/newcircle1.png');
+    })
 }
 
 (function(a,window,undefined){
@@ -147,7 +153,7 @@ function homeEffect(){
             $('.page').find('li').removeClass('active').eq(num).addClass('active');
             //右边导航效果
             $('.img1').attr('src','./images/smallline.png');
-            $('.img2').attr('src','./images/smbluecircle.png').css({'position':'relative','left':'0'});
+            $('.img2').attr('src','./images/smbluecircle.png').css({'position':'relative','left':'0','top':'0px'});
             $('.active .img1').attr('src','./images/yellowline.png');
             $('.page .active').find('img').last().attr('src','./images/bigyecircle.png')
                 .css({'position':'relative','left':'-3px','top':'3px'});

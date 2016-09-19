@@ -69,7 +69,6 @@ body {
 .header .inner .search {
   text-align: right;
   position: relative;
-  right: -4px;
 }
 .header .inner .search .search-input {
   width: 236px;
@@ -161,6 +160,15 @@ body {
 .home .content .row2 ul li p.up,
 .home .content .row3 ul li p.up {
   margin: 30px 0 10px;
+}
+.home .content .more {
+  margin-top: 22px;
+  position: relative;
+  right: 42px;
+  font-size: 13px;
+}
+.home .content .more a {
+  color: #3399cc;
 }
 .home .leftnav {
   position: absolute;
@@ -255,8 +263,39 @@ body {
   color: #ffffff;
   font-size: 14px;
 }
+.home .home-news {
+  margin-left: 33px;
+  position: relative;
+  top: -50px;
+}
+.home .home-news .newscontent {
+  width: 700px;
+  position: relative;
+  left: 2px;
+  top: -3px;
+  background: rgba(48, 50, 77, 0.6);
+}
+.home .home-news .newscontent p {
+  color: #fff;
+}
+.home .home-news .newscontent ul {
+  padding: 30px;
+}
+.home .home-news .newscontent ul li {
+  line-height: 38px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.home .home-news .newscontent ul li p .span1 {
+  margin: 0 0 0 20px;
+}
+.home .home-news .newscontent ul li p .span2 {
+  margin: 0 100px 0 20px;
+}
 .home .specialfunc {
   margin-top: 60px;
+  position: relative;
+  right: 8px;
 }
 .home .specialfunc li {
   float: left;
