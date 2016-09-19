@@ -209,12 +209,21 @@ body {
   position: relative;
   top: 160px;
 }
+.home .rightnav .right-des .page {
+  position: relative;
+  left: 22px;
+  width: 120px;
+}
+.home .rightnav .right-des .page .active span {
+  color: #F2D454!important;
+}
 .home .rightnav .right-des li {
   line-height: 30px;
 }
 .home .rightnav .right-des li .img1 {
   position: relative;
   top: -4px;
+  margin: 0 4px;
 }
 .home .rightnav .right-des li .bigyecircle {
   position: relative;

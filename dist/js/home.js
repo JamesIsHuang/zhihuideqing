@@ -22,13 +22,18 @@ function homeNavClick(){
         $(this).css({'background':'none'})
             .find('a').css('color','#ffcc33');
     })
-
+    //右边导航
+    $('.page .active').find('.img1').attr('src','./images/yellowline.png');
+    $('.page .active').find('img').last().attr('src','./images/bigyecircle.png')
+        .css({'position':'relative','left':'-3px','top':'3px'});
 }
 
 function init(){
     var wheels=$('.wheel').mouseWheel();
     homeNavClick();
 }
+
+
 (function(a,window,undefined){
 
     var supportsTransitions = (function() {
@@ -72,8 +77,7 @@ function init(){
 
         $(this).wrap('<div class="wrapper"></div>');
         $('.wrapper').css({width:winW,height:winH});
-
-        if (section.length>1) {
+        function addRightNav(){
             $('<ul class="page"></ul>').appendTo('.right-des');
             if (supportsTransitions) {
                 _this.css({
@@ -81,27 +85,30 @@ function init(){
                     'transition':'all '+opt.speed+'ms'
                 })
             }else {
-                _this.css({width:winW,height:winH,'position':'absolute','left':0}).animate({top: 0},opt.speend)
+                _this.css({width:winW,height:winH,'position':'absolute','left':0}).animate({top: 0},opt.speed)
             }
             var wordDes = ['数据资源','大数据分析','特色功能','新闻公告'];
             for (var i = 0; i < section.length; i++) {
                 var li=document.createElement('li');
                 var t=i+1;
                 li.innerHTML= '<span>'+wordDes[i]+'</span><a href=#section_'+t+' data-index=index_'+t+'>' +
-                    '<span><img class=\"img1\" src=\"./images/smallline.png\"/><img src=\"./images/smbluecircle.png\"/></span></a>';
+                    '<span><img class=\"img1\" src=\"./images/smallline.png\"/><img class=\"img2\" src=\"./images/smbluecircle.png\"/></span></a>';
                 $('.page')[0].appendChild(li);
             };
+            $('.page').find('li').eq(1).css({'position':'relative','left':'-12px'});
             $('.page').find('li').first().addClass('active');
+
             var pageH=$('.page')[0].offsetHeight;
             $('.page').css({'height':pageH,'margin-top':-pageH/2});
+        }
+        if (section.length>1) {
+            addRightNav();
             $('.page').find('li').on('click',function(){
                 var aa=$(this);
                 var hash=aa.find('a').attr('href').split('#')[1];
-                //console.log(hash)
-                aa.addClass('active').siblings().removeClass('active')
+                aa.addClass('active').siblings().removeClass('active');
                 index=aa.index();
                 moveUp(index)
-
                 if (history.replaceState) {
                     history.pushState({}, document.title, '#' + hash);
                 }
@@ -114,7 +121,7 @@ function init(){
         function initScroll(d){
             var timeNow = new Date().getTime();
             // 如果跟上次动画的时间差小于停滞时间
-            if (timeNow - lastAnimation < opt.quietPeriod + opt.speend) {
+            if (timeNow - lastAnimation < opt.quietPeriod + opt.speed) {
                 return;
             }
             if (d>0) {
@@ -136,6 +143,12 @@ function init(){
         function moveUp(num){
             var posY=-num*winH+'px';
             $('.page').find('li').removeClass('active').eq(num).addClass('active');
+            //右边导航效果
+            $('.img1').attr('src','./images/smallline.png');
+            $('.img2').attr('src','./images/smbluecircle.png').css({'position':'relative','left':'0'});
+            $('.active .img1').attr('src','./images/yellowline.png');
+            $('.page .active').find('img').last().attr('src','./images/bigyecircle.png')
+                .css({'position':'relative','left':'-3px','top':'3px'});
             if (opt.orident==='vertical') {
                 if (supportsTransitions) {
                     _this.css({
@@ -143,7 +156,7 @@ function init(){
                         'transition':'all '+opt.speed+'ms'
                     })
                 }else {
-                    _this.animate({top:posY},opt.speend)
+                    _this.animate({top:posY},opt.speed)
                 }
             };
 
