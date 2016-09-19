@@ -48,7 +48,7 @@ function init(){
 
     a.fn.mouseWheel=function(option){
         var _this=$(this),
-            winW=874,
+            winW=804,
             winH=620,
             section=_this.children('.section'),
             index=0,
@@ -59,7 +59,7 @@ function init(){
             orident:'vertical',
             keybord:true,
             ease:'linear',
-            speend:1000,
+            speed:1000,
             quietPeriod:100 // 滚动事件停滞时间，数值越大阻尼感越强
         }
         var opt=$.extend({},defaults,option);
@@ -67,27 +67,28 @@ function init(){
         section.each(function(i,n){
             $(n).addClass('section_'+parseInt(i+1));
             $(n).css({width:winW,height:winH});
-            $('body,html').addClass('initBody')
+            //$('body,html').addClass('initBody')
         });
 
         $(this).wrap('<div class="wrapper"></div>');
         $('.wrapper').css({width:winW,height:winH});
 
         if (section.length>1) {
-            $('<ul class="page"></ul>').appendTo('.wrapper');
+            $('<ul class="page"></ul>').appendTo('.right-des');
             if (supportsTransitions) {
                 _this.css({
                     'transform':'translate3d(0,0,0)',
-                    'transition':'all '+opt.speend+'ms'
+                    'transition':'all '+opt.speed+'ms'
                 })
             }else {
                 _this.css({width:winW,height:winH,'position':'absolute','left':0}).animate({top: 0},opt.speend)
             }
-
+            var wordDes = ['数据资源','大数据分析','特色功能','新闻公告'];
             for (var i = 0; i < section.length; i++) {
                 var li=document.createElement('li');
                 var t=i+1;
-                li.innerHTML= '<a href=#section_'+t+' data-index=index_'+t+'><span>'+t+'</span></a>';
+                li.innerHTML= '<span>'+wordDes[i]+'</span><a href=#section_'+t+' data-index=index_'+t+'>' +
+                    '<span><img class=\"img1\" src=\"./images/smallline.png\"/><img src=\"./images/smbluecircle.png\"/></span></a>';
                 $('.page')[0].appendChild(li);
             };
             $('.page').find('li').first().addClass('active');
@@ -139,7 +140,7 @@ function init(){
                 if (supportsTransitions) {
                     _this.css({
                         'transform':'translate3d(0,'+posY+',0)',
-                        'transition':'all '+opt.speend+'ms'
+                        'transition':'all '+opt.speed+'ms'
                     })
                 }else {
                     _this.animate({top:posY},opt.speend)
@@ -161,13 +162,13 @@ function init(){
 
             section.css({'width':w,'height':h});
             $('.wrapper').css({'width':w,'height':h});
-            $('body,html').addClass('initBody')
+            //$('body,html').addClass('initBody')
         }
 
         $(window).on('resize',function(){
-            winW=874,
-                winH=620,
-                windwSize(winW,winH)
+            winW=804,
+            winH=620,
+            windwSize(winW,winH)
             moveUp(index)
         })
 
