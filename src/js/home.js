@@ -27,8 +27,8 @@ function homeNavClick(){
 }
 
 function init(){
-    homeNavClick();
     var wheels=$('.wheel').mouseWheel();
+    homeNavClick();
 }
 (function(a,window,undefined){
 
