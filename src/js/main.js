@@ -12,14 +12,12 @@ function homeEffect(){
         $(this).css({'border':'2px solid #4E5469','color':'inherit'})
             .find('img').attr({'src':'./images/elecmap.png'});
     })
-
     //左边导航鼠标滑过效果
     $('.leftnav .leftnav-des div').mouseover(function(){
         $(this).css({'background':'#F2D454'})
             .find('a').css('color','#330033');
         $(this).siblings('p').css('color','#3399cc');
     })
-
     $('.leftnav .leftnav-des div').mouseout(function(){
         $(this).css({'background':'none'})
             .find('a').css('color','#F2D454');
@@ -46,7 +44,6 @@ function homeEffect(){
 }
 
 (function(a,window,undefined){
-
     var supportsTransitions = (function() {
         var s = document.documentElement.style || document.body.style,
             v = ['ms', 'O', 'Moz', 'Webkit'];
@@ -183,7 +180,6 @@ function homeEffect(){
         })
 
         function windwSize(w,h){
-
             section.css({'width':w,'height':h});
             $('.wrapper').css({'width':w,'height':h});
             //$('body,html').addClass('initBody')
@@ -219,6 +215,9 @@ function homeEffect(){
         };
     }
 })(jQuery,window);
+
+//login
+
 
 function init(){
     var wheels=$('.wheel').mouseWheel();
