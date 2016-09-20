@@ -17,13 +17,13 @@ function homeEffect(){
     $('.leftnav .leftnav-des div').mouseover(function(){
         $(this).css({'background':'#ffcc33'})
             .find('a').css('color','#330033');
-    })
-    $('.leftnav .leftnav-des div').click(function(){
         $(this).siblings('p').css('color','#3399cc');
     })
+
     $('.leftnav .leftnav-des div').mouseout(function(){
         $(this).css({'background':'none'})
             .find('a').css('color','#ffcc33');
+        $(this).siblings('p').css('color','#999');
     })
     //右边导航
     $('.page .active').find('.img1').attr('src','./images/yellowline.png');

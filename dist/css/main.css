@@ -64,11 +64,12 @@ body {
   margin: 0px 110px 0 193px;
   height: 120px;
   position: relative;
-  top: 110px;
+  top: 94px;
 }
 .header .inner .search {
   text-align: right;
   position: relative;
+  right: 20px;
 }
 .header .inner .search .search-input {
   width: 236px;
@@ -130,14 +131,14 @@ body {
 }
 .home {
   width: 1024px;
-  margin: 50px auto 0;
+  margin: 30px auto 0;
   position: relative;
   min-height: 600px;
 }
 .home .content .row1,
 .home .content .row2,
 .home .content .row3 {
-  height: 140px;
+  height: 125px;
 }
 .home .content .row1 ul,
 .home .content .row2 ul,
@@ -149,7 +150,7 @@ body {
 .home .content .row3 ul li {
   float: left;
   height: 100%;
-  width: 176px;
+  width: 165px;
   background: #555B6F;
   opacity: 0.56;
   margin: 2px;
@@ -179,7 +180,7 @@ body {
 }
 .home .wrapper {
   min-height: 520px;
-  left: 150px;
+  left: 174px;
   position: absolute;
   overflow: hidden;
 }
@@ -232,8 +233,8 @@ body {
 }
 .home .rightnav .right-des .page {
   position: relative;
-  left: 22px;
-  width: 120px;
+  left: 30px;
+  width: 140px;
 }
 .home .rightnav .right-des .page .active span {
   color: #F2D454!important;
@@ -244,7 +245,7 @@ body {
 .home .rightnav .right-des li .img1 {
   position: relative;
   top: -4px;
-  margin: 0 4px;
+  margin: 0 4px 0 15px;
 }
 .home .rightnav .right-des li .bigyecircle {
   position: relative;
@@ -264,11 +265,11 @@ body {
   font-size: 12px;
 }
 .home .bigdata {
-  padding: 110px 0px 0px 30px;
+  padding: 110px 0px 0px 20px;
 }
 .home .bigdata li {
   float: left;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 .home .bigdata li p {
   text-align: center;
@@ -277,13 +278,13 @@ body {
   font-size: 14px;
 }
 .home .home-news {
-  margin-left: 33px;
+  margin-left: -10px;
   position: relative;
   top: -50px;
 }
 .home .home-news .more {
   position: relative;
-  right: 66px;
+  right: 110px;
   float: right;
   font-size: 13px;
 }
@@ -319,7 +320,7 @@ body {
 }
 .home .specialfunc li {
   float: left;
-  margin-right: 25px;
+  margin-right: 9px;
 }
 .home .specialfunc .background {
   background: url("../images/rectangle.png") no-repeat;
