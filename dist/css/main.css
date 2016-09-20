@@ -188,6 +188,18 @@ body {
   top: 28px;
   left: -15px;
 }
+.home .leftnav-des .li0 {
+  margin-top: 1px;
+}
+.home .leftnav-des .li1,
+.home .leftnav-des .li2,
+.home .leftnav-des .li4,
+.home .leftnav-des .li5 {
+  margin-top: 20px;
+}
+.home .leftnav-des .li3 {
+  margin-top: 19px;
+}
 .home .leftnav-des p {
   font-size: 12px;
   -webkit-transform-origin-x: 0;
@@ -201,6 +213,7 @@ body {
   position: relative;
   left: 15px;
   top: -1px;
+  height: 22px;
 }
 .home .leftnav-des a {
   color: #ffcc33;
@@ -303,8 +316,6 @@ body {
 }
 .home .specialfunc {
   margin-top: 60px;
-  position: relative;
-  right: 8px;
 }
 .home .specialfunc li {
   float: left;
@@ -341,21 +352,32 @@ body {
   }
   .home .leftnav-des div {
     height: 22px;
-    top: 0;
   }
   .home .leftnav-des .li1,
   .home .leftnav-des .li5 {
-    margin-top: 17px!important;
+    margin-top: 17px;
   }
   .home .leftnav-des .li2,
   .home .leftnav-des .li4 {
-    margin-top: 18px!important;
+    margin-top: 18px;
   }
   .home .leftnav-des .li3 {
-    margin-top: 16px!important;
+    margin-top: 16px;
   }
   .home .leftnav-des p {
     position: relative;
     left: 5px;
+  }
+}
+@-moz-document url-prefix() {
+  .home .leftnav-des .li0 {
+    margin-top: 0px;
+  }
+  .home .leftnav-des .li1,
+  .home .leftnav-des .li5 {
+    margin-top: 19px;
+  }
+  .home .leftnav-des .li3 {
+    margin-top: 18px;
   }
 }

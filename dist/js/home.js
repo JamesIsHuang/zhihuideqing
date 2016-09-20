@@ -18,6 +18,9 @@ function homeEffect(){
         $(this).css({'background':'#ffcc33'})
             .find('a').css('color','#330033');
     })
+    $('.leftnav .leftnav-des div').click(function(){
+        $(this).siblings('p').css('color','#3399cc');
+    })
     $('.leftnav .leftnav-des div').mouseout(function(){
         $(this).css({'background':'none'})
             .find('a').css('color','#ffcc33');

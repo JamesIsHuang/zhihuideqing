@@ -180,6 +180,15 @@ body{
     position: relative;
     top: 28px;
     left: -15px;
+    .li0{
+      margin-top: 1px;
+    }
+    .li1,.li2,.li4,.li5{
+      margin-top: 20px;
+    }
+    .li3{
+      margin-top: 19px;
+    }
     p{
       .small-font;
       .smallsize-font;
@@ -191,6 +200,8 @@ body{
       position: relative;
       left: 15px;
       top:-1px;
+      height: 22px;
+      //top:0;
     }
     a{
       color: #ffcc33;
@@ -199,6 +210,7 @@ body{
       top: -1px;
       left: -15px;
     }
+
   }
   .rightnav,.right-logo{
     float: right;
@@ -302,8 +314,8 @@ body{
   }
   .specialfunc{
     margin-top: 60px;
-    position: relative;
-    right: 8px;
+    //position: relative;
+    //right: 8px;
     li{
       float: left;
       margin-right: 25px;
@@ -341,17 +353,16 @@ body{
   }
   .home .leftnav-des div{
     height: 22px;
-    top:0;
   }
   .home .leftnav-des{
     .li1,.li5{
-      margin-top: 17px!important;
+      margin-top: 17px;
     }
     .li2,.li4{
-      margin-top: 18px!important;
+      margin-top: 18px;
     }
     .li3{
-      margin-top: 16px!important;
+      margin-top: 16px;
     }
     p{
       position: relative;
@@ -359,5 +370,19 @@ body{
     }
   }
 
+}
+
+@-moz-document url-prefix(){
+  .home .leftnav-des{
+    .li0{
+      margin-top: 0px;
+    }
+    .li1,.li5{
+      margin-top: 19px;
+    }
+    .li3{
+      margin-top:18px;
+    }
+  }
 }
 
