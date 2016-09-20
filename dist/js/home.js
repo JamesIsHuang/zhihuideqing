@@ -15,14 +15,14 @@ function homeEffect(){
 
     //左边导航鼠标滑过效果
     $('.leftnav .leftnav-des div').mouseover(function(){
-        $(this).css({'background':'#ffcc33'})
+        $(this).css({'background':'#F2D454'})
             .find('a').css('color','#330033');
         $(this).siblings('p').css('color','#3399cc');
     })
 
     $('.leftnav .leftnav-des div').mouseout(function(){
         $(this).css({'background':'none'})
-            .find('a').css('color','#ffcc33');
+            .find('a').css('color','#F2D454');
         $(this).siblings('p').css('color','#999');
     })
     //右边导航
