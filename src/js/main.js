@@ -217,11 +217,42 @@ function homeEffect(){
 })(jQuery,window);
 
 //login
+function inputHover(){
+    $("input[name='username'],input[name='password']").mouseover(function(){
+        $(this).css({'border':'2px solid #ffcc33'});
+    })
 
+    $("input[name='username'],input[name='password']").mouseout(function(){
+        $(this).css({'border':'2px solid #999999'});
+    })
+}
+function rememberMe(){
+    if($.cookie('absms_crm2_userName')!=undefined){
+        $("#rememberMe").attr("checked", true);
+    }else{
+        $("#rememberMe").attr("checked", false);
+    }
 
+    if($('#rememberMe:checked').length>0){
+        $('#userName').val($.cookie('absms_crm2_userName'));
+        $('#password').val($.cookie('absms_crm2_password'));
+    }
+
+    $("#rememberMe").click(function(){
+        if($('#rememberMe:checked').length>0){//设置cookie
+            $.cookie('absms_crm2_userName', $('#userName').val());
+            $.cookie('absms_crm2_password', $('#password').val());
+        }else{//清除cookie
+            $.removeCookie('absms_crm2_userName');
+            $.removeCookie('absms_crm2_password');
+        }
+    });
+}
 function init(){
     var wheels=$('.wheel').mouseWheel();
     homeEffect();
+    rememberMe();
+    inputHover();
 }
 
 init();

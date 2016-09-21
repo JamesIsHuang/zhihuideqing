@@ -1,4 +1,4 @@
-div,p,body,ul,li,a,span{
+div,p,body,ul,li,a,span,input{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -395,5 +395,74 @@ body{
   clear: both;
   height: 419px;
   background: rgba(12,31,59,0.4);
+  position: relative;
+  .login-form{
+    height: 250px;
+    width: 285px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    margin: -20% 0 0 -25%;
+    input{
+      width: 268px;
+      height: 40px;
+    }
+    .usernameimg{
+      background: url("../images/personalimg.png") no-repeat;
+      height: 18px;
+      width: 16px;
+      display: block;
+      position: absolute;
+      right: 8px;
+      top: 13px;
+    }
+    input[name="username"]{
+      margin-bottom: 13px;
+      background: #000033;
+      color: #fff;
+      border:2px solid #999999;
+      padding-left: 13px;
+      font-size: 14px;
+    }
+    input[name="password"]{
+      margin-bottom: 16px;
+      background: #000033;
+      color: #fff;
+      border:2px solid #999999;
+      padding-left: 13px;
+      font-size: 14px;
+    }
+    input[type="submit"]{
+      width: 285px;
+      background: #cccc33;
+      color: #ffffff;
+      border:0;
+      border-radius: 2px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .cut-off{
+      margin:6px 0 22px;
+      .cut-off-img1{
+        margin-right: 58px;
+      }
+    }
+    .loginnow{
+      height: 13px;
+      width: 13px;
+    }
+    .loginnowdes{
+      font-size: 14px;
+      color: #fff;
+      position: relative;
+      top: -2px;
+    }
+    .loginissue{
+      cursor: pointer;
+      color: #3399ff;
+      font-size: 14px;
+      float: right;
+    }
+  }
 }
 
