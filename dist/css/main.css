@@ -5,7 +5,8 @@ ul,
 li,
 a,
 span,
-input {
+input,
+h1 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -74,7 +75,7 @@ body {
 }
 .header .inner .search .search-input {
   width: 236px;
-  height: 22px;
+  height: 24px;
   border: 1px solid #D2CED5;
   padding-left: 10px;
   background: transparent;
@@ -461,4 +462,59 @@ body {
   color: #3399ff;
   font-size: 14px;
   float: right;
+}
+#newsdetail {
+  height: 523px;
+  width: 705px;
+  margin: 0 auto;
+  background: rgba(37, 48, 79, 0.3);
+  text-align: center;
+}
+#newsdetail .newsdetail {
+  color: #6891B6;
+  font-size: 18px;
+  font-weight: normal;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(102, 102, 102, 0.51);
+}
+#newsdetail .article {
+  width: 80%;
+  margin: 0 auto;
+}
+#newsdetail .article p {
+  color: #fff;
+  font-size: 15px;
+}
+#newsdetail .article .articlefrom {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: rgba(102, 102, 102, 0.51);
+}
+#newsdetail .title {
+  margin-bottom: 35px;
+}
+#newsdetail .title h1 {
+  color: #ffcc33;
+  font-size: 18px;
+  margin: 20px;
+}
+#newsdetail .title .author {
+  background: #185DAB;
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px 8px;
+  font-size: 13px;
+}
+#newsdetail .title .authorinfo,
+#newsdetail .title .time {
+  color: #fff;
+  font-size: 12px;
+}
+#newsdetail .title .count {
+  color: #fff;
 }

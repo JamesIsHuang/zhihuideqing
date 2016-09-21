@@ -234,14 +234,14 @@ function rememberMe(){
     }
 
     if($('#rememberMe:checked').length>0){
-        $('#userName').val($.cookie('absms_crm2_userName'));
-        $('#password').val($.cookie('absms_crm2_password'));
+        $('.username').val($.cookie('absms_crm2_userName'));
+        $('.password').val($.cookie('absms_crm2_password'));
     }
 
     $("#rememberMe").click(function(){
         if($('#rememberMe:checked').length>0){//设置cookie
-            $.cookie('absms_crm2_userName', $('#userName').val());
-            $.cookie('absms_crm2_password', $('#password').val());
+            $.cookie('absms_crm2_userName', $('.username').val());
+            $.cookie('absms_crm2_password', $('.password').val());
         }else{//清除cookie
             $.removeCookie('absms_crm2_userName');
             $.removeCookie('absms_crm2_password');
