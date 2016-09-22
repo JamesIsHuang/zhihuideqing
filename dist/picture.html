@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的制图</title>
+		<style>
+		body{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				font-family: arial, 微软雅黑, serif;
+			}
+		#title{
+			background-image: url(images/TitleBg.png);
+			height:38px;
+			font-size:14px;
+			text-align: center;
+			line-height:38px;
+			color:#418ee1;
+		}
+		#content{
+        	height:100%;
+        	margin:0px auto;
+        }
+        .map{
+        	background-image: url(images/pic.jpg);
+        	width:161px;
+        	height:170px;
+        	color:white;
+        	font-size:12px;
+        	padding:5px;
+        }
+		</style>
+	</head>
+	<body background="images/ifameBg.png">
+		<div id="title">我的制图</div>
+		<table id="content">
+			<tr>
+				<td style="padding:5px;">
+					<a href="#" onClick="clickChange('pic1')"><div class="map" id="pic1" >地图编码:ChinaM ap<br>服务类型:101</div></a>
+				</td>
+				<td style="padding:5px;">
+					<a href="#" onClick="clickChange('pic2')"><div class="map" id="pic2" >地图编码:ChinaM ap<br>服务类型:102</div></a>				
+				</td>
+				<td style="padding:5px;">
+					<a href="#" onClick="clickChange('pic3')"><div class="map" id="pic3" >地图编码:ChinaM ap<br>服务类型:103</div></a>				
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:5px;"> 
+					<a href="#" onClick="clickChange('pic4')"><div class="map" id="pic4" >地图编码:ChinaM ap<br>服务类型:104</div></a>				
+				</td>
+				<td style="padding:5px;">
+					<a href="#" onClick="clickChange('pic5')"><div class="map" id="pic5" >地图编码:ChinaM ap<br>服务类型:105</div></a>				
+				</td>
+				<td style="padding-top:5px;">
+					<a id="more" href="#" ><img src="images/more.png"/></a>
+				</td>
+			</tr>
+	</body>
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script>
+		lastON="#pic1";nowON="#pic1";
+//		clickChange(nowON.substring(1,nowON.length));
+		function clickChange(now){
+			lastON=nowON;
+			$(lastON).css('background-image','url(images/pic.jpg)');
+			nowON="#"+now;
+			$(nowON).css('background-image','url(images/picON.jpg)');
+		}
+	</script>
+</html>

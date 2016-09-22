@@ -9,7 +9,7 @@ function homeEffect(){
             .find('img').attr({'src':'./images/elecmaphover.png'});
     })
     $('.home .content li').mouseout(function(){
-        $(this).css({'border':'2px solid #4E5469','color':'inherit'})
+        $(this).css({'border':'2px solid rgba(255,255,255,0)','color':'#171631'})
             .find('img').attr({'src':'./images/elecmap.png'});
     })
     //左边导航鼠标滑过效果
