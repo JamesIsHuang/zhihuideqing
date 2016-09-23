@@ -1,4 +1,4 @@
-div,p,body,ul,li,a,span,input,h1{
+div,p,body,ul,li,a,span,input,h1,h2{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -46,11 +46,30 @@ body{
   .right{
     float: right;
     width: 27px;
+    position: relative;
     .top{
       margin: 30px 3px 10px 0;
       img{
         position: relative;
         right: -2px;
+      }
+    }
+    .content{
+      background: #eeeeee;width: 73px;left: -24px;text-align:center;height: 83px;position: absolute;
+      z-index: 50;
+      border:1px solid #c8c9d1;
+      p{
+        line-height: 27px;
+        border-bottom: 2px solid #CFD0D6;
+        font-size: 15px;
+        a{
+          color: #333333;
+        }
+      }
+      img{
+        position: absolute;
+        top: -7px;
+        left: 28px;
       }
     }
   }
@@ -517,7 +536,7 @@ body{
     }
   }
   .title{
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     h1{
       color: #ffcc33;
       font-size: 19px;
@@ -546,5 +565,129 @@ body{
     }
   }
 
+}
+
+#mobile2{
+  .mob2-outer-background{
+    background: url(../images/yidong1mobbac.png) no-repeat;
+    width:777px;
+    height:433px;
+    margin-top: 15px;
+    padding: 60px 0 0 190px;
+    .div1,.div2,.div3{
+      clear: both;
+      height: 95px;
+      display: block;
+      h2{
+        font-size: 15px;
+        color: #ffcc33;
+        margin-bottom: 5px;
+        font-weight: normal;
+      }
+      img{
+        position: relative;
+        top: -20px;
+      }
+      li{
+        float: left;
+        margin-right: 10px;
+        div{
+          display: inline-block;
+          font-size: 13px;
+          color: #fff;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.mobile-p-1{
+   li{
+     float: left;
+   }
+   .li2{
+     position: relative;
+     display: block;
+     left: 100px;
+     top:60px;
+     font-size: 14px;
+     .feature1{
+       margin: 50px 0 6px 50px;
+       .word{
+         color: #3366cc;
+         position: relative;
+         top: 4px;
+         img{
+           position: relative;
+           top: 4px;
+         }
+       }
+     }
+     .feature2{
+       margin-left: 50px;
+       .word{
+          color: #3366cc;
+          img{
+            position: relative;
+            top: 4px;
+          }
+
+         }
+     }
+   }
+  .version{
+    color: #fff;
+    background:rgba(51,102,204,0.46);
+    font-size: 14px;
+    padding:5px 15px;
+    text-align: center;
+    width: 120px;
+  }
+  .phonemap{
+    font-size: 30px;
+    color: #ffcc33;
+    font-weight: normal;
+    .span1{
+      margin-right: 60px;
+    }
+  }
+  .android{
+    width: 220px;
+    height: 40px;
+    border:1px solid #888898;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px 0 0 50px;
+    color: #fff;
+    a{
+      color: #fff;
+    }
+    .mob-img1{
+      position: relative;
+      left: -37px;
+      top: 5px;
+    }
+
+  }
+  .iphone{
+    width: 220px;
+    height: 40px;
+    border:1px solid #888898;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px 0 0 50px;
+    color: #fff;
+    a{
+      color: #fff;
+      position: relative;
+      left: -2px;
+    }
+    .mob-img2{
+      left:-40px;
+      top:5px;
+      position: relative;
+    }
+  }
 }
 

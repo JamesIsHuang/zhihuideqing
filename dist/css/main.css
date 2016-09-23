@@ -6,7 +6,8 @@ li,
 a,
 span,
 input,
-h1 {
+h1,
+h2 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -54,6 +55,7 @@ body {
 .header .right {
   float: right;
   width: 27px;
+  position: relative;
 }
 .header .right .top {
   margin: 30px 3px 10px 0;
@@ -61,6 +63,29 @@ body {
 .header .right .top img {
   position: relative;
   right: -2px;
+}
+.header .right .content {
+  background: #eeeeee;
+  width: 73px;
+  left: -24px;
+  text-align: center;
+  height: 83px;
+  position: absolute;
+  z-index: 50;
+  border: 1px solid #c8c9d1;
+}
+.header .right .content p {
+  line-height: 27px;
+  border-bottom: 2px solid #CFD0D6;
+  font-size: 15px;
+}
+.header .right .content p a {
+  color: #333333;
+}
+.header .right .content img {
+  position: absolute;
+  top: -7px;
+  left: 28px;
 }
 .header .inner {
   margin: 0px 110px 0 193px;
@@ -512,7 +537,7 @@ body {
   background: rgba(160, 160, 160, 0.16);
 }
 #newsdetail .title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 #newsdetail .title h1 {
   color: #ffcc33;
@@ -537,4 +562,130 @@ body {
 }
 #newsdetail .title .count {
   margin-left: 3px;
+}
+#mobile2 .mob2-outer-background {
+  background: url(../images/yidong1mobbac.png) no-repeat;
+  width: 777px;
+  height: 433px;
+  margin-top: 15px;
+  padding: 60px 0 0 190px;
+}
+#mobile2 .mob2-outer-background .div1,
+#mobile2 .mob2-outer-background .div2,
+#mobile2 .mob2-outer-background .div3 {
+  clear: both;
+  height: 95px;
+  display: block;
+}
+#mobile2 .mob2-outer-background .div1 h2,
+#mobile2 .mob2-outer-background .div2 h2,
+#mobile2 .mob2-outer-background .div3 h2 {
+  font-size: 15px;
+  color: #ffcc33;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+#mobile2 .mob2-outer-background .div1 img,
+#mobile2 .mob2-outer-background .div2 img,
+#mobile2 .mob2-outer-background .div3 img {
+  position: relative;
+  top: -20px;
+}
+#mobile2 .mob2-outer-background .div1 li,
+#mobile2 .mob2-outer-background .div2 li,
+#mobile2 .mob2-outer-background .div3 li {
+  float: left;
+  margin-right: 10px;
+}
+#mobile2 .mob2-outer-background .div1 li div,
+#mobile2 .mob2-outer-background .div2 li div,
+#mobile2 .mob2-outer-background .div3 li div {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  padding-left: 8px;
+}
+.mobile-p-1 li {
+  float: left;
+}
+.mobile-p-1 .li2 {
+  position: relative;
+  display: block;
+  left: 100px;
+  top: 60px;
+  font-size: 14px;
+}
+.mobile-p-1 .li2 .feature1 {
+  margin: 50px 0 6px 50px;
+}
+.mobile-p-1 .li2 .feature1 .word {
+  color: #3366cc;
+  position: relative;
+  top: 4px;
+}
+.mobile-p-1 .li2 .feature1 .word img {
+  position: relative;
+  top: 4px;
+}
+.mobile-p-1 .li2 .feature2 {
+  margin-left: 50px;
+}
+.mobile-p-1 .li2 .feature2 .word {
+  color: #3366cc;
+}
+.mobile-p-1 .li2 .feature2 .word img {
+  position: relative;
+  top: 4px;
+}
+.mobile-p-1 .version {
+  color: #fff;
+  background: rgba(51, 102, 204, 0.46);
+  font-size: 14px;
+  padding: 5px 15px;
+  text-align: center;
+  width: 120px;
+}
+.mobile-p-1 .phonemap {
+  font-size: 30px;
+  color: #ffcc33;
+  font-weight: normal;
+}
+.mobile-p-1 .phonemap .span1 {
+  margin-right: 60px;
+}
+.mobile-p-1 .android {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #888898;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px 0 0 50px;
+  color: #fff;
+}
+.mobile-p-1 .android a {
+  color: #fff;
+}
+.mobile-p-1 .android .mob-img1 {
+  position: relative;
+  left: -37px;
+  top: 5px;
+}
+.mobile-p-1 .iphone {
+  width: 220px;
+  height: 40px;
+  border: 1px solid #888898;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px 0 0 50px;
+  color: #fff;
+}
+.mobile-p-1 .iphone a {
+  color: #fff;
+  position: relative;
+  left: -2px;
+}
+.mobile-p-1 .iphone .mob-img2 {
+  left: -40px;
+  top: 5px;
+  position: relative;
 }
