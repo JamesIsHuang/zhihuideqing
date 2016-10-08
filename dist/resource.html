@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我的云资源</title>
+		<style>
+		body{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+				font-family: arial, 微软雅黑, serif;
+			}
+		#title{
+			background-image: url(images/TitleBg.png);
+			height:38px;
+			font-size:14px;
+			text-align: center;
+			line-height:38px;
+			color:#418ee1;
+		}
+		.white{
+			color:#FFFFFF;
+			line-height: 28px;
+			height:28px;
+			font-size:12px;
+			list-style: none;
+			vertical-align: middle;
+			padding:10px;
+		}
+		.yellow{
+			color:#f4d54b;
+			font-size:12px;
+			display:inline;
+			line-height: 28px;
+			height:28px;
+			vertical-align: middle;
+		}
+		.inputArea{
+			height:28px;
+			background:transparent;
+			border:solid 1px #404c67;
+			background-color:transparent;
+			line-height: 28px;
+			color:#FFFFFF;
+			width:403px;
+			-webkit-appearance: none;
+			padding-left:10px;
+		}
+		.buttonDiv{
+			background-image: url(images/button.png);
+			width:253px;
+			height:41;
+			line-height: 41px;
+			text-align: center;
+			list-style: none;
+			margin:0px auto;
+			font-size:20px;
+		}
+		.beizhu{
+			color:#9c9fa8;
+			font-size:12px;
+		}
+		a.button{
+        	color:#FFFFFF;text-decoration:none;display:inline
+        }
+        a.button:link {
+            color:#FFFFFF;text-decoration:none;display:inline
+        }
+        a.button:visited {
+            color:#FFFFFF;text-decoration:none;display:inline
+        }
+        a.button:hover {
+            color:#FFFFFF;text-decoration:none;display:inline
+        }
+        #content{
+        	height:100%;
+        	padding:10px;
+        	margin:0px auto;
+        }
+        .btn-select{ 
+			background: url(images/arrow.png) no-repeat right 10px center; 
+		} 
+		</style>
+	</head>
+	<body background="images/ifameBg.png">
+		<div id="title">我的云资源</div>
+		<table id="content">
+			<tr>
+				<td class="white">数据库类型&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<a class="btn-select" id="btn_select"> 
+					<select class="inputArea" id="department" onChange="select()">
+						<option value="zj" style="background-color:#141f3d;">Oracle DataBase 11g</option>
+						<option value="zj1" style="background-color:#141f3d;">Mysql</option>
+					</select>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="white">用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="username" />
+					<div class="beizhu">长度为2-128个字符，以大写字母开头，可以包含数字，“.”，“-”或“'”</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="white">登&nbsp;陆&nbsp;密&nbsp;码&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="password" />
+					<div class="beizhu">8_16字符，且同时包含四项，（大写字母，<br>小写字母，数字和特殊符号）</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="white">确&nbsp;认&nbsp;密&nbsp;码&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="confirm" />
+					<div class="beizhu">请确认之前输入的密码。</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="white">产&nbsp;品&nbsp;名&nbsp;称&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+						<div style="color:#368cef;">数据库</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="white">联系人姓名&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="contacts" />
+				</td>
+			</tr>
+			<tr>
+				<td class="white">业&nbsp;务&nbsp;介&nbsp;绍&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="business" />
+				</td>
+			</tr>
+			<tr>
+				<td class="white">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="mailbox" />
+				</td>
+			</tr>
+			<tr>
+				<td class="white">手&nbsp;机&nbsp;号&nbsp;码&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" class="inputArea" id="phoneNumber" />
+				</td>
+			</tr>
+			<tr>
+				<td class="white">应&nbsp;用&nbsp;场&nbsp;景&nbsp;&nbsp;&nbsp;
+					<div class="yellow">>&nbsp;&nbsp;&nbsp;</div>
+				</td>
+				<td>
+					<input type="text" style="height:80px" class="inputArea" id="application" />
+				</td>
+			</tr>
+			<tr>
+			<td class="white" colspan="2">
+				<div class="buttonDiv" id="complete">
+					<a class="button" href="#" >提交申请</a>
+				</div>
+			</td>
+			</tr>
+		</div>
+		
+	</body>
+</html>
