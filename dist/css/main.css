@@ -753,6 +753,7 @@ body {
   position: relative;
   left: 8px;
   top: -7px;
+  width: 50px;
 }
 #resourceedit .tab1 .res-bot .line2 {
   margin-top: 15px;
