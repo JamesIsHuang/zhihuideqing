@@ -285,6 +285,11 @@ function rememberMe(){
         }
     });
 }
+var effctFunction = {
+    resource:function(){
+
+    }
+}
 function init(){
     var wheels=$('.wheel').mouseWheel();
     homeEffect();

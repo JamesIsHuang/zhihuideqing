@@ -14,7 +14,7 @@ body{
   background: url('../images/background.png') no-repeat;
   background-size: cover;
   font-family: "微软雅黑";
-  height: 100%;
+  //height: 100%;
   min-width: 1024px;
   cursor: default;
   position: relative;
@@ -394,10 +394,7 @@ body{
     font-size: 12px;
     -webkit-transform: scale(0.91);
   }
-  .footer{
-    font-size: 12px;
-    -webkit-transform: scale(0.91);
-  }
+
   #newsdetail .title p{
     font-size: 12px;
     -webkit-transform: scale(0.91);
@@ -687,6 +684,140 @@ body{
       left:-40px;
       top:5px;
       position: relative;
+    }
+  }
+}
+
+#resourceedit{
+  .tab1{
+    width: 715px;
+    position: relative;
+    left: 150px;
+    .res-top{
+      position: relative;
+      height: 70px;
+      background: rgba(95,95,113,0.35);
+      ul{
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        margin-left: -44%;
+        margin-top: -2%;
+      }
+      li{
+        float: left;
+        width: 170px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+      }
+      .li1{
+        background: url("../images/resedityellow.png") no-repeat;
+      }
+      .li2,.li3{
+        background: url("../images/resedittitle.png") no-repeat;
+
+      }
+      .li2{
+        left: -12px;
+        position: relative;
+      }
+      .li3{
+        left: -24px;
+        position: relative;
+      }
+      .li4{
+        background: url("../images/finish.png") no-repeat;
+        position: relative;
+        left: -36px;
+      }
+    }
+    .res-bot{
+      color: #fff;
+      background: rgba(38,70,109,0.35);
+      height: 600px;
+      padding-left: 100px;
+      .line1{
+        padding-top: 30px;
+        span{
+          top:-70px;
+        }
+        .selectfile{
+          background: url("../images/selectfile.png") no-repeat;
+          background-size: cover;
+          color: #000000;
+          font-size: 12px;
+          padding: 1px 4px;
+          position: relative;
+          left: 8px;
+          top: -7px;
+        }
+      }
+      .line2{
+        margin-top:15px;
+      }
+      .line3,.line4,.line5{
+        margin-top: 16px;
+      }
+      .res-keyword{
+        margin-left: 116px;
+        span{
+          margin-right: 10px!important;
+          padding:1px 4px;
+          background: #006699;
+          background: #006699;
+          text-align: center;
+          margin-top: 10px;
+          width: 60px!important;
+          font-size: 12px;
+        }
+      }
+      .line1,.line2,.line3,.line4,.line5{
+        p{
+          span{
+            margin-right: 36px;
+            width: 80px;
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+            img{
+              position: absolute;
+              right: 0;
+              top: 8px;
+            }
+          }
+          input{
+            width: 350px;
+            height: 35px;
+            background: transparent;
+            border:1px solid #63697e;
+            padding-left: 10px;
+          }
+        }
+
+      }
+
+      .nextstep{
+        text-align: center;
+        position: relative;
+        left: -100px;
+        width: 715px;
+
+        button{
+          border: 0;
+          width: 300px;
+          background: #006699;
+          height: 40px;
+          margin-top: 150px;
+          border-radius: 3px;
+          font-size: 20px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
