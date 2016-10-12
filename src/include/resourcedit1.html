@@ -1,7 +1,7 @@
 <div class="home" id="resourceedit">
     @@include('leftnav.html')
     <div class="res-edit-content">
-        <div class="tab1">
+        <div class="tab1 current">
             <div class="res-top">
                 <ul>
                     <li class="li1">1&nbsp;&nbsp;资源信息</li>
@@ -14,7 +14,11 @@
                 <div class="line1">
                     <p>
                         <span class="thumbnail">缩&nbsp;略&nbsp;图<img  class="line1-img1" src="./images/rightarrow.png"/></span>
-                        <a href="javascript:void(0)"><img src="./images/thumbnail.png"/><span class="selectfile">选取文件</span></a>
+                        <a class="input-outer">
+                            <img src="./images/thumbnail.png"/>
+                            <span class="selectfile">文件选取</span>
+                            <input type="file"/>
+                        </a>
                     </p>
                 </div>
                 <div class="line2">
@@ -35,10 +39,12 @@
                     <p><span>所属目录<img src="./images/rightarrow.png"/></span><input/></p>
                 </div>
                 <div class="nextstep">
-                    <button>下一步</button>
+                    <button id="resbutab1">下一步</button>
                 </div>
             </div>
-
         </div>
+        @@include('resourcedit2.html')
+        @@include('resourcedit3.html')
+        @@include('resourcedit4.html')
     </div>
 </div>
