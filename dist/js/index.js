@@ -55,6 +55,17 @@ function resEditEffect(){
                 $('#resourceedit .tab2 .li1').css('background',"url('./images/resedit.png')");
                 $('#resourceedit .tab2 .li2').css('background',"url('./images/resedittitleyellow.png')");
                 break;
+            case 'resbutab5':
+                $('.tab3').hide();
+                $('.tab4').show();
+                $('#resourceedit .tab4 .li1').css('background',"url('./images/resedit.png')");
+                $('#resourceedit .tab4 .li4').css('background',"url('./images/finishyellow.png') no-repeat");
+                break;
+            case 'resbutab6':
+                $('.tab3').show();
+                $('.tab4').hide();
+                $('#resourceedit .tab4 .li3').css('background',"url('./images/resedittitle.png')");
+                break;
         }
     })
     //resource页面下服务填写的选择效果
