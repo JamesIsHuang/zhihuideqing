@@ -1642,3 +1642,184 @@ body {
 #resourceedit .tab4 {
   display: none;
 }
+#servicesouce .service-content {
+  width: 880px;
+  height: 530px;
+  float: right;
+}
+#servicesouce .service-content .service-map {
+  width: 720px;
+  height: 100%;
+  background: rgba(174, 176, 184, 0.15);
+  float: left;
+}
+#servicesouce .service-content .service-map .title {
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  top: -30px;
+}
+#servicesouce .service-content .service-map .subtitle {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  top: -19px;
+  color: #ccc;
+  font-size: 14px;
+  background: rgba(95, 95, 103, 0.35);
+}
+#servicesouce .service-content .service-map .subtitle .li1 {
+  float: left;
+  margin-left: 12px;
+}
+#servicesouce .service-content .service-map .subtitle .li1 span {
+  cursor: pointer;
+  padding: 2px 10px;
+}
+#servicesouce .service-content .service-map .subtitle .vertical-line {
+  position: relative;
+  top: 3px;
+}
+#servicesouce .service-content .service-map .subtitle .selected {
+  background: #3384ff;
+}
+#servicesouce .service-content .service-map .subtitle .li2 {
+  float: right;
+  margin-right: 12px;
+}
+#servicesouce .service-content .service-map .subtitle .li2 span {
+  cursor: pointer;
+  margin: 0 7px;
+}
+#servicesouce .service-content .service-map .subtitle .li2 span img {
+  margin-right: 5px;
+}
+#servicesouce .service-content .service-map .map {
+  margin-top: 10px;
+}
+#servicesouce .service-content .service-map .map ul {
+  height: 180px;
+  width: 600px;
+  margin: 0 auto;
+}
+#servicesouce .service-content .service-map .map li {
+  float: left;
+  width: 180px;
+  height: 180px;
+  border: 1px solid;
+  text-align: center;
+  border: 2px solid #fade64;
+}
+#servicesouce .service-content .service-map .map li img {
+  margin-top: 40px;
+  height: 73px;
+}
+#servicesouce .service-content .service-map .map li p {
+  margin-top: 30px;
+  color: #fff;
+}
+#servicesouce .service-content .service-map .map .li2 {
+  margin: 0 24px;
+}
+#servicesouce .service-content .service-map .map .li3 {
+  float: right;
+}
+#servicesouce .service-content .service-map .map .ul2 {
+  margin-top: 20px;
+}
+#servicesouce .service-content .service-map .pagination {
+  text-align: center;
+  margin-top: 35px;
+  color: #e5e5e7;
+  font-size: 12px;
+}
+#servicesouce .service-content .service-map .pagination span {
+  cursor: pointer;
+}
+#servicesouce .service-content .service-map .pagination .prev {
+  margin-right: 28px;
+  padding: 3px 8px;
+  border: 1px solid #b5b5b5;
+}
+#servicesouce .service-content .service-map .pagination .next {
+  margin-left: 28px;
+  padding: 3px 8px;
+  border: 1px solid #b5b5b5;
+}
+#servicesouce .service-content .service-map .pagination .number {
+  padding: 2px 6px;
+  border: 1px solid #b5b5b5;
+  margin-right: 11px;
+}
+#servicesouce .service-content .service-map .pagination .last {
+  margin-right: 0;
+}
+#servicesouce .service-content .service-map .pagination .selected {
+  background: #f4d54b;
+  border: 1px solid #f4d54b;
+  color: #000;
+}
+#servicesouce .service-content .service-type {
+  float: right;
+  background: rgba(174, 176, 184, 0.15);
+  width: 150px;
+  height: 430px;
+  color: #ccc;
+  font-size: 14px;
+}
+#servicesouce .service-content .service-type .type-title {
+  margin: 16px 0 20px 11px;
+}
+#servicesouce .service-content .service-type .dic {
+  width: 128px;
+  height: 100px;
+  margin-left: 11px;
+}
+#servicesouce .service-content .service-type .dic .dic-title {
+  height: 30px;
+  line-height: 30px;
+  background: #418ee1;
+  padding-left: 4px;
+}
+#servicesouce .service-content .service-type .dic .resouce-dic {
+  background: rgba(82, 84, 109, 0.6);
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+}
+#servicesouce .service-content .service-type .dic .resouce-dic img {
+  position: relative;
+  left: 60px;
+}
+#servicesouce .service-content .service-type .dic .other-resouce {
+  height: 30px;
+  line-height: 30px;
+  background: #418ee1;
+  padding-left: 4px;
+}
+#servicesouce .service-content .service-type .hottag {
+  margin: 5px 0 10px 15px;
+}
+#servicesouce .service-content .service-type .tag-content {
+  font-size: 12px;
+  margin-left: 15px;
+  height: 160px;
+  width: 120px;
+  background: rgba(174, 176, 184, 0.2);
+  padding-top: 10px;
+}
+#servicesouce .service-content .service-type .tag-content .inner-tag {
+  display: block;
+  margin-left: 10px;
+}
+#servicesouce .service-content .service-signup {
+  width: 150px;
+  margin: 24px 0 0 10px;
+  height: 32px;
+  background: rgba(65, 142, 225, 0.89);
+  color: #fff;
+  font-size: 15px;
+  border: transparent;
+  cursor: pointer;
+}

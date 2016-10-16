@@ -73,6 +73,20 @@ function resEditEffect(){
         $(this).siblings('li').find('img').attr('src','./images/res-point.png');
         $(this).find('img').attr('src','./images/res-point-hover.png');
     })
+    //服务资源页面
+    $('#servicesouce .map li').mouseover(function(){
+        $(this).css({'background':'url("./images/serviceicon-1hover.png")','border':'1px solid transparent'});
+        $(this).find('img,p').hide();
+    })
+    $('#servicesouce .map li').mouseout(function(){
+        $(this).css({'background':'none','border':'1px solid #fade64'});
+        $(this).find('img,p').show();
+    })
+    //默认,最近时间,最多浏览
+    $('#servicesouce .li1 span').click(function(){
+        $(this).siblings('span').removeClass('selected');
+        $(this).addClass('selected');
+    })
 }
 
 function init(){
