@@ -1825,6 +1825,9 @@ body {
   border: transparent;
   cursor: pointer;
 }
+#servicedetail {
+  min-height: 700px;
+}
 #servicedetail .content {
   width: 880px;
   height: 530px;
@@ -2016,7 +2019,6 @@ body {
 }
 #servicedetail .content .distrit {
   width: 720px;
-  height: 100%;
   float: left;
   position: relative;
   top: -20px;
@@ -2029,15 +2031,16 @@ body {
   text-align: center;
   color: #66ccff;
 }
+#servicedetail .content .distrit .detail {
+  height: 320px;
+}
 #servicedetail .content .distrit .detail .detaildes {
   float: left;
-  margin-left: 30px;
-  margin-top: 20px;
   color: #fff;
   font-size: 14px;
 }
 #servicedetail .content .distrit .detail .detaildes p {
-  margin: 10px;
+  margin: 10px 10px 15px 26px;
 }
 #servicedetail .content .distrit .detail .detaildes .basetitle {
   color: #b2b6ba;
@@ -2046,4 +2049,117 @@ body {
   color: #e4eef4;
   padding: 1px 15px;
   border: 1px solid;
+}
+#servicedetail .content .distrit .detail .detaildes .name {
+  width: 350px;
+  border-bottom: 1px solid #505e7a;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  top: 5px;
+}
+#servicedetail .content .distrit .detail .detaildes .resouse-name {
+  margin: 30px 10px 20px 26px;
+}
+#servicedetail .content .distrit .detail .detaildes .resouce-time {
+  margin-top: 50px;
+  position: relative;
+}
+#servicedetail .content .distrit .detail .detaildes .resouce-time img {
+  position: absolute;
+  left: -17px;
+  top: 5px;
+}
+#servicedetail .content .distrit .detail .detaildes .resouce-time .createtime {
+  margin-left: 12px;
+}
+#servicedetail .content .distrit .detail .detaildes .leftdis {
+  margin-left: 42px;
+}
+#servicedetail .content .distrit .detail .detaildes .updatetime {
+  margin-left: 5px;
+}
+#servicedetail .content .distrit .detail .detaildes .dic {
+  margin-left: 12px;
+}
+#servicedetail .content .distrit .detail .detaildes .keyword {
+  margin-left: 67px;
+}
+#servicedetail .content .distrit .detail .detaildes .author {
+  margin-left: 68px;
+}
+#servicedetail .content .distrit .detail .thumbnail img {
+  margin-top: 40px;
+  margin-left: 12px;
+}
+#servicedetail .content .distrit .detail .cut-off-line {
+  width: 645px;
+  margin-left: 25px;
+}
+#servicedetail .content .distrit .datelist {
+  margin-bottom: 20px;
+}
+#servicedetail .content .distrit .datelist .year {
+  margin: 15px 0 0 50px;
+}
+#servicedetail .content .distrit .datelist .yearname {
+  font-size: 25px;
+  position: relative;
+  left: 15px;
+  top: -5px;
+  top: -7px;
+  color: #95b4ce;
+}
+#servicedetail .content .distrit .datelist .month {
+  margin-left: 68px;
+  border-left: 1px solid #6699cc;
+  height: 100px;
+  line-height: 100px;
+  position: relative;
+  top: -8px;
+  padding-top: 10px;
+}
+#servicedetail .content .distrit .datelist .month .monthname {
+  position: relative;
+  left: -55px;
+  color: #95b4ce;
+  font-size: 12px;
+  top: -3px;
+}
+#servicedetail .content .distrit .datelist .month .middlecircle {
+  position: absolute;
+  left: -9px;
+  top: 48px;
+}
+#servicedetail .content .distrit .datelist .month .res-small-line {
+  position: absolute;
+  left: 9px;
+  top: 56px;
+}
+#servicedetail .content .distrit .datelist .month .description {
+  margin-left: 34px;
+  height: 80px;
+  top: -94px;
+  width: 567px;
+  position: relative;
+  background: rgba(92, 148, 189, 0.25);
+}
+#servicedetail .content .distrit .datelist .month .description p {
+  line-height: initial;
+  font-size: 12px;
+}
+#servicedetail .content .distrit .datelist .month .description .des-div {
+  color: #95b4ce;
+  position: relative;
+  top: -108px;
+  margin-left: 120px;
+}
+#servicedetail .content .distrit .datelist .month .description .des-div .coor-sys {
+  margin-left: 50px;
+}
+#servicedetail .content .distrit .datelist .month .description .des-div .use-permission {
+  margin-left: 50px;
+}
+#servicedetail .content .distrit .datelist .month .description .des-img {
+  margin: 11px 30px;
 }
